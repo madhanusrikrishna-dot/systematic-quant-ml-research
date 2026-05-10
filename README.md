@@ -1,114 +1,43 @@
-## Key Components
+# Systematic Quant ML Research
 
-### 1. Data Engineering
+A Python-based quantitative research portfolio demonstrating data engineering, feature engineering, regression-based machine learning, walk-forward validation, simulation design, and Monte Carlo robustness testing on intraday financial time-series data.
 
-The preprocessing layer focuses on transforming raw intraday OHLCV data into structured research-ready datasets.
-
-It includes:
-
-- Market-session filtering
-- Timestamp validation
-- Missing-value handling
-- Rolling statistical calculations
-- Time-series feature preparation
+> This repository is a public portfolio showcase. Core research logic, exact strategy rules, thresholds, and proprietary implementation details are intentionally kept private.
 
 ---
 
-### 2. Feature Engineering
+## Project Overview
 
-The feature engineering layer creates intraday market features based on:
+This project demonstrates an end-to-end research workflow for systematic intraday market analysis.
 
-- Price movement
-- Volatility
-- Volume behavior
-- Trend structure
-- VWAP-based relationships
-- Rolling normalization
+The goal is not to expose a trading signal, but to show the engineering process behind building structured research infrastructure:
 
----
-
-### 3. Machine Learning Workflow
-
-The research process uses regression-based machine learning workflows for predictive modeling and signal evaluation.
-
-The model research layer includes:
-
-- Feature-combination testing
-- Train/validation/test separation
+- Data preprocessing and validation
+- Intraday feature engineering
+- Regression-based machine learning workflows
 - Walk-forward validation
-- Consistency-based candidate evaluation
-- Reproducible model artifact creation
+- Out-of-sample simulation
+- Equity curve tracking
+- Monte Carlo robustness testing
+- Drawdown and distribution analysis
 
 ---
 
-### 4. Simulation Engine
+## Research Pipeline
 
-The simulation layer evaluates model behavior on unseen data using a chronological event-driven process.
-
-It tracks:
-
-- Equity curve
-- Trade events
-- Portfolio-level performance
-- Monthly summaries
-- Drawdown behavior
-- Risk-adjusted metrics
-
----
-
-### 5. Monte Carlo Robustness Testing
-
-Monte Carlo simulation is used to stress-test the distribution of possible outcomes by resampling trade sequences.
-
-It helps analyze:
-
-- Final equity distribution
-- Drawdown distribution
-- Path dependency
-- Outcome variability
-- Robustness under randomized trade ordering
-
----
-
-## Visual Outputs
-
-The repository includes visual outputs such as:
-
-- Equity curve
-- Monte Carlo equity paths
-- Final equity distribution
-- Drawdown distribution
-
----
-
-## Tech Stack
-
-- Python
-- pandas
-- NumPy
-- scikit-learn-style regression workflows
-- Joblib
-- Numba
-- Matplotlib
-
----
-
-## Skills Demonstrated
-
-This project demonstrates practical experience in:
-
-- Python development
-- Data engineering
-- Feature engineering
-- Machine learning workflows
-- Quantitative research
-- Simulation design
-- Statistical validation
-- Automation
-- Research pipeline architecture
-
----
-
-## Note
-
-This is a portfolio-level research showcase. Sensitive implementation details, exact strategy logic, thresholds, and proprietary research code are intentionally excluded from the public repository.
+```text
+Raw Market Data
+        ↓
+Data Normalization
+        ↓
+Feature Engineering
+        ↓
+Model Research
+        ↓
+Walk-Forward Validation
+        ↓
+Model Export
+        ↓
+Out-of-Sample Simulation
+        ↓
+Monte Carlo Robustness Testing
