@@ -101,6 +101,7 @@ Visual Outputs
 Equity Curve
 
 Monte Carlo Equity Curve Simulation
+## Key Components
 
 Final Equity Distribution
 
